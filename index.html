@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>浙江大学航空航天学院导师检索与分类</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-header">
+        <a href="https://www.zju.edu.cn" target="_blank" rel="noopener" class="logo-link">
+          <img src="assets/zju-logo.svg" alt="浙江大学" class="zju-logo" />
+        </a>
+        <div class="hero-title-group">
+          <p class="kicker">ZJU SAA · 导师列表</p>
+          <h1>按研究方向与职称重组的导师索引</h1>
+          <p class="subtitle">可搜索姓名、研究方向、职称、研究所，点击姓名进入主页。</p>
+          <div class="searchbar">
+            <input id="searchInput" type="search" placeholder="输入姓名 / 研究方向 / 职称 / 研究所" />
+            <button id="clearBtn" type="button">清空</button>
+          </div>
+          <div class="meta">
+            <span id="countInfo">加载中…</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="institute-nav" id="instituteNav">
+    <div class="nav-inner">
+      <span class="nav-label">快速跳转：</span>
+      <div class="nav-tags" id="navTags"></div>
+    </div>
+  </nav>
+
+  <main class="content">
+    <section id="groupedView" class="grouped"></section>
+    <section id="searchView" class="search-results hidden"></section>
+  </main>
+
+  <footer class="footer">
+    <span>数据来源：浙江大学航空航天学院官网导师列表及个人主页</span>
+  </footer>
+
+  <script src="data/mentors.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
